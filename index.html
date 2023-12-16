@@ -27,7 +27,7 @@
       <ul>
         <li><a href="#halls">Залы</a></li>
         <li><a href="#about">О нас</a></li>
-        <li><a href="#">Бронь</a></li>
+        <li><a href="#reservation">Бронь</a></li>
         <li><a href="#">Отзывы</a></li>
         <li><a href="#contacts">Контакты</a></li>
       </ul>
@@ -88,6 +88,144 @@
       </ol>
     </section>
 
+    <section id="reservation">
+      <h2>Забронировать</h2>
+
+      <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+
+        <fieldset>
+          <label>
+            <input type="radio" name="halls" value="vibes">
+          80`s vibes
+          </label>
+
+          <label>
+            <input type="radio" name="halls" value="starWars">
+          Star wars
+          </label>
+
+          <label>
+            <input type="radio" name="halls" value="wildWest">
+          Wild west
+          </label>
+
+          <label>
+            <input type="radio" name="halls" value="neon">
+          Neon style
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Собери набор развлечений</legend>
+
+          <fieldset>
+            <legend>Приставка</legend>
+
+            <label>
+              <input type="radio" name="console" value="playStation">
+            PlayStation
+            </label>
+
+            <label>
+              <input type="radio" name="console" value="sega">
+            Sega Mega Drive
+            </label>
+
+            <label>
+              <input type="radio" name="console" value="xBox">
+            X-box One S
+            </label>
+
+            <label>
+              <input type="radio" name="console" value="dendy">
+            Dendy
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Настольные игры</legend>
+
+            <label>
+              <input type="checkbox" name="boardgames" value="jaenga">
+            Jenga
+            </label>
+
+            <label>
+              <input type="checkbox" name="boardgames" value="monopoly">
+            Monopoly
+            </label>
+
+            <label>
+              <input type="checkbox" name="boardgames" value="manchckin">
+            Манчкин
+            </label>
+
+            <label>
+              <input type="checkbox" name="boardgames" value="alias">
+            Alias
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Дополнительно</legend>
+
+            <label>
+              <input type="checkbox" name="additionally">
+              Караоке
+            </label>
+
+            <label>
+              <input type="checkbox" name="additionally">
+              VR
+            </label>
+          </fieldset>
+        </fieldset>
+
+
+        <fieldset>
+          <legend>Выбери дату и время</legend>
+
+          <label for="date">Дата*</label>
+          <input type="date" name="date" id="date" required>
+          
+
+          <label for="time">Время*</label>
+          <input type="time" name="time" id="time" required>
+          
+
+          <label for="numberOfPersons">Количество человек*</label>
+          <input type="number" name="numberOfPersons" id="numberOfPersons" required>
+          
+
+          <label for="name">Имя*</label>
+          <input type="text" name="name" id="name" required>
+          
+
+          <label for="secondName">Фамилия*</label>
+          <input type="text" name="secondName" id="secondName" required>
+          
+
+          <label for="phone">Номер телефона*</label>
+            <input type="tel" name="phone" id="phone" required title="+7или8-___-___-__-__" pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
+          
+
+          <label>
+            <input type="checkbox" name="year>18" value="true">
+          Я старше 18 лет
+          </label>
+        </fieldset>
+
+        <button type="submit">Забронировать</button>
+        
+        <label>
+          <input type="checkbox" name="agreeToDataProcessing" value="true">
+        Согласен на обработку данных
+        </label>
+        
+      </form>
+
+    </section>
+
     <section id="about">
       <h2>О нас</h2>
 
@@ -115,12 +253,15 @@
       <a href="tel:89509302893">8(950)930-28-93</a>
       
       <a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
-      
+    </address>
+
+    <nav>
       <ul>
         <li><a target="_blank" href="https://vk.com">Vkontakte</a></li>
         <li><a target="_blank" href="https://web.telegram.org/">Telegram</a></li>
       </ul>
-    </address>
+    </nav>
+    
 
   </footer>
   
