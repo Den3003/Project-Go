@@ -1,7 +1,11 @@
+.faq__title {
+  margin-top: 0;
+}
+
 .faq__list {
   list-style: none;
   padding: 0;
-  margin-top: 0; /*^ Если убрать нижний отступы тут, заголовок контакты прилипает сверху к списку  */
+  margin: 0; 
 }
 
 .faq__item {
@@ -38,7 +42,7 @@
 }
 
 .faq__item:nth-child(even):after {
-  background-image: url("../images/open.svg");
+  background-image: url("../images/open-white.svg");
 }
 
 .faq__item:nth-child(odd):after {
