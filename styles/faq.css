@@ -1,4 +1,13 @@
+.faq {
+  padding: 0 0 100px;
+}
+
 .faq__title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px; 
+  text-transform: uppercase;
   margin-top: 0;
 }
 
@@ -42,9 +51,9 @@
 }
 
 .faq__item:nth-child(even):after {
-  background-image: url("../images/open-white.svg");
+  background-image: url("../images/main/open-white.svg");
 }
 
 .faq__item:nth-child(odd):after {
-  background-image: url("../images/open-purple.svg");
+  background-image: url("../images/main/open-purple.svg");
 }

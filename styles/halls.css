@@ -1,0 +1,59 @@
+.halls {
+  padding: 100px 0 100px;
+}
+
+.halls-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px; 
+  text-transform: uppercase;
+  margin: 0 0 60px;
+}
+
+.halls-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.halls-item {
+  max-width: 1180px;
+  max-height: 710px;
+  line-height: 710px;
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.halls-item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.halls-subtitle {
+  display: inline-block;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  max-width: 230px;
+  max-height: 180px;
+}
+
+.vibes {
+  background-image: url("../images/main/vibes.jpg");
+}
+
+.wars {
+  background-image: url("../images/main/star.jpg");
+}
+
+.west {
+  background-image: url("../images/main/west.jpg");
+}
+
+.style {
+  background-image: url("../images/main/neon.jpg");
+}
