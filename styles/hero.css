@@ -1,8 +1,8 @@
-.hero {
+.hero-container {
   background-image: url("../images/main/hero.png");
   background-repeat: no-repeat;
-  background-position: bottom right;
-  height: 823px;
+  background-position: bottom right 30px;
+  min-height: 823px;
 }
 
 .hero-title {

@@ -1,5 +1,5 @@
 .halls {
-  padding: 100px 0 100px;
+  padding: 50px 0 50px;
 }
 
 .halls-title {
@@ -18,28 +18,21 @@
 }
 
 .halls-item {
-  max-width: 1180px;
-  max-height: 710px;
-  line-height: 710px;
+  white-space: pre-line;
+  font-size: 70px; 
+  font-weight: 700;
+  line-height: 80px; 
+  text-transform: uppercase;
   text-align: center;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  padding-top: 275px;
+  padding-bottom: 275px;
 }
 
 .halls-item:not(:last-child) {
   margin-bottom: 60px;
-}
-
-.halls-subtitle {
-  display: inline-block;
-  font-size: 70px;
-  font-weight: 700;
-  line-height: 80px;
-  text-transform: uppercase;
-  vertical-align: middle;
-  max-width: 230px;
-  max-height: 180px;
 }
 
 .vibes {

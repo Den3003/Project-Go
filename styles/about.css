@@ -1,5 +1,5 @@
 .about {
-  padding: 0 0 100px;
+  padding: 50px 0 50px;
 }
 
 .about-title {
@@ -17,26 +17,43 @@
   margin: 0 0 30px;
 }
 
+.about-text:last-child {
+  margin: 0;
+}
+
 .quote {
+  
   padding: 40px 0 0;
   margin: 0;
 }
 
-.quote-quotes {
-  color: #6C0287;
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 50px; 
-  text-transform: uppercase;
-}
-
 .quote-text {
+  position: relative;
+  display: inline-block;
+  white-space: pre-line;
   font-family: inherit;
   font-size: 44px;
-  font-style: normal;
   line-height: 50px;
   text-transform: uppercase;
   margin: 0 0 40px;
+  padding-left: 55px;
+}
+
+.quote-text:before {
+  position: absolute;
+  content: "\201C";
+  color: #6C0287;
+  font-size: 44px;
+  font-weight: 900;
+  top: -8px;
+  left: 0;
+}
+
+.quote-text:after {
+  content: "\201D";
+  color: #6C0287;
+  font-weight: 900;
+  margin-left: 10px;
 }
 
 .quote-title {
@@ -50,17 +67,19 @@
   max-width: 270px;
   text-align: left;
   margin: 0;
+  vertical-align: bottom;
 }
 
 .quote-author-block {
+  margin: 0;
   text-align: right;
 }
 
 .quote-author-image {
   object-fit: cover;
   object-position: top;
-  border-radius: 80px;
-  vertical-align: bottom;
+  border-radius: 50%;
+  vertical-align: middle;
   margin-right: 30px;
 }
 

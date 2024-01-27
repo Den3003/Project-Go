@@ -1,3 +1,7 @@
+.contacts {
+  padding: 50px 0 0;
+}
+
 .contacts-title {
   text-align: center;
   font-size: 40px;
@@ -12,14 +16,16 @@
 }
 
 .location-text {
-  display: inline-block;
+  white-space: pre-line;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   font-style: normal;
-  margin: 0;
-  vertical-align: middle;
-  padding-left: 30px;
+  padding-left: 65px;
+  margin: 0 0 38px;
+  background-image: url("../images/footer/location.svg");
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .location-icon {
@@ -28,20 +34,21 @@
 }
 
 .location-tel {
-  display: inline-block;
+  display: block;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 28px;
   text-decoration: none;
   color: inherit;
-  margin: 0;
-  padding-left: 30px;
-  vertical-align: super;
+  margin: 0 0 11px;
+  padding-left: 65px;
+  background-image: url("../images/footer/phone.svg");
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .location-email {
-  display: inline-block;
+  display: block;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -49,8 +56,10 @@
   text-decoration: none;
   color: inherit;
   margin: 0;
-  padding-left: 30px;
-  vertical-align: super;
+  padding-left: 65px;
+  background-image: url("../images/footer/mail.svg");
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .contacts-list {
@@ -69,5 +78,6 @@
 }
 
 .contacts-link {
+  display: block;
   color: #fff;
 }
