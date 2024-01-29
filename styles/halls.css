@@ -1,5 +1,5 @@
 .halls {
-  padding: 50px 0 50px;
+  padding: 50px 0;
 }
 
 .halls-title {
@@ -47,6 +47,6 @@
   background-image: url("../images/main/west.jpg");
 }
 
-.style {
+.neon-style {
   background-image: url("../images/main/neon.jpg");
 }
