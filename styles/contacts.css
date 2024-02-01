@@ -2,7 +2,7 @@
   padding: 50px 0 100px;
 }
 
-.contacts-title {
+.contacts__title {
   text-align: center;
   font-size: 40px;
   font-weight: 700;
@@ -11,11 +11,11 @@
   margin: 0 0 54px;
 }
 
-.location-block {
+.location {
   padding: 0 0 40px;
 }
 
-.location-text {
+.location__text {
   white-space: pre-line;
   font-size: 24px;
   font-weight: 700;
@@ -28,12 +28,7 @@
   background-position: left;
 }
 
-.location-icon {
-  display: inline-block;
-  vertical-align: baseline;
-}
-
-.location-link {
+.location__link {
   display: block;
   max-width: max-content;
   font-size: 24px;
@@ -46,34 +41,34 @@
   background-position: left;
 }
 
-.location-tel {
+.location__tel {
   margin: 0 0 11px;
   background-image: url("../images/footer/phone.svg");
 }
 
-.location-email {
+.location__email {
   line-height: 28px; 
   margin: 0;
   background-image: url("../images/footer/mail.svg");
 }
 
-.contacts-list {
+.social__list {
   list-style: none;
   padding: 0;
   margin: 0;
   font-size: 0;
 }
 
-.contacts-item {
+.social__item {
   display: inline-block;
   vertical-align: middle;
 }
 
-.contacts-item:not(:last-child) {
+.social__item:not(:last-child) {
   margin-right: 25px;
 }
 
-.contacts-link {
+.social__link {
   display: block;
   color: #fff;
 }

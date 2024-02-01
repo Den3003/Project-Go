@@ -2,12 +2,12 @@
   padding: 146px 0 50px;
 }
 
-.hero-container {
+.hero__container {
   position: relative;
   min-height: 823px;
 }
 
-.hero-title {
+.hero__title {
   font-size: 150px;
   font-weight: 900;
   line-height: 100%; 
@@ -16,7 +16,7 @@
   margin: 0;
 }
 
-.hero-subtitle {
+.hero__subtitle {
   font-size: 28px;
   font-weight: 400;
   line-height: 50px;
@@ -24,13 +24,13 @@
   padding-left: 100px;
 }
 
-.hero-container:after {
+.hero__container:after {
   position: absolute;
   content: "";
   background-image: url("../images/main/hero.png");
   background-repeat: no-repeat;
   background-position: center;
-  right: 30px;
+  right: 0;
   bottom: 0;
   width: 675px;
   height: 762px;

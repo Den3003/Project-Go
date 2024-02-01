@@ -2,7 +2,7 @@
   padding: 50px 0;
 }
 
-.halls-title {
+.halls__title {
   text-align: center;
   font-size: 40px;
   font-weight: 700;
@@ -11,13 +11,13 @@
   margin: 0 0 60px;
 }
 
-.halls-list {
+.halls__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.halls-item {
+.halls__item {
   white-space: pre-line;
   font-size: 70px; 
   font-weight: 700;
@@ -31,22 +31,22 @@
   padding-bottom: 275px;
 }
 
-.halls-item:not(:last-child) {
+.halls__item:not(:last-child) {
   margin-bottom: 60px;
 }
 
-.vibes {
+.halls__item_bg-img_vibes {
   background-image: url("../images/main/vibes.jpg");
 }
 
-.wars {
+.halls__item_bg-img_wars {
   background-image: url("../images/main/star.jpg");
 }
 
-.west {
+.halls__item_bg-img_west {
   background-image: url("../images/main/west.jpg");
 }
 
-.neon-style {
+.halls__item_bg-img_neon-style {
   background-image: url("../images/main/neon.jpg");
 }

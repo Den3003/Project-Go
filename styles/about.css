@@ -2,7 +2,7 @@
   padding: 50px 0;
 }
 
-.about-title {
+.about__title {
   font-size: 40px;
   font-weight: 700;
   line-height: 50px; 
@@ -11,23 +11,22 @@
   margin: 0 0 50px;
 }
 
-.about-text {
+.about__text {
   font-size: 20px;
   line-height: 28px;
   margin: 0 0 30px;
 }
 
-.about-text:last-child {
+.about__text:last-child {
   margin: 0;
 }
 
 .quote {
-  
   padding: 40px 0 0;
   margin: 0;
 }
 
-.quote-text {
+.quote__text {
   position: relative;
   display: inline-block;
   white-space: pre-line;
@@ -39,7 +38,7 @@
   padding-left: 55px;
 }
 
-.quote-text:before {
+.quote__text:before {
   position: absolute;
   content: "\201C";
   color: #6C0287;
@@ -49,17 +48,17 @@
   left: 0;
 }
 
-.quote-text:after {
+.quote__text:after {
   content: " \201D";
   color: #6C0287;
   font-weight: 900;
 }
 
-.quote-title {
+.quote__text-phrase {
   font-weight: 400;
 }
 
-.quote-author {
+.quote__author {
   display: inline-block;
   font-size: 20px;
   line-height: 28px;
@@ -69,12 +68,12 @@
   vertical-align: bottom;
 }
 
-.quote-author-block {
+.quote__author-block {
   margin: 0;
   text-align: right;
 }
 
-.quote-author-image {
+.quote__author-image {
   object-fit: cover;
   object-position: top;
   border-radius: 50%;
