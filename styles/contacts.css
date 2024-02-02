@@ -11,24 +11,11 @@
   margin: 0 0 54px;
 }
 
-.location {
+.address {
   padding: 0 0 40px;
 }
 
-.location__text {
-  white-space: pre-line;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  font-style: normal;
-  padding-left: 65px;
-  margin: 0 0 38px;
-  background-image: url("../images/footer/location.svg");
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
-.location__link {
+.address__link {
   display: block;
   max-width: max-content;
   font-size: 24px;
@@ -41,12 +28,19 @@
   background-position: left;
 }
 
-.location__tel {
+.address__link_type_location {
+  white-space: pre-line;
+  line-height: 28px;
+  margin: 0 0 38px;
+  background-image: url("../images/footer/location.svg");
+}
+
+.address__link_type_phone {
   margin: 0 0 11px;
   background-image: url("../images/footer/phone.svg");
 }
 
-.location__email {
+.address__link_type_email {
   line-height: 28px; 
   margin: 0;
   background-image: url("../images/footer/mail.svg");
