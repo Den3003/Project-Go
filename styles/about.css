@@ -83,6 +83,7 @@
 
 .left-side__img {
   max-width: 100%;
+  height: auto;
   vertical-align: middle;
   margin-right: 50px;
 }
