@@ -11,6 +11,26 @@
   margin: 0 0 50px;
 }
 
+.about__left-side {
+  display: inline-block;
+  width: calc(100% - 560px);
+  max-width: 100%;
+  vertical-align: top;
+  margin-right: 50px;
+  object-fit: contain;
+  object-position: top;
+}
+
+.about__right-side {
+  display: inline-block;
+  max-width: 500px;
+  vertical-align: top;
+}
+
+.about__contents {
+  margin-bottom: 59px;
+}
+
 .about__text {
   font-size: 20px;
   line-height: 28px;
@@ -21,8 +41,9 @@
   margin: 0;
 }
 
+
+
 .quote {
-  padding: 59px 0 0;
   margin: 0;
 }
 
@@ -81,17 +102,6 @@
   margin-right: 30px;
 }
 
-.left-side__img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-  margin-right: 50px;
-}
 
-.about__right-side {
-  display: inline-block;
-  max-width: 500px;
-  vertical-align: middle;
-}
 
 
