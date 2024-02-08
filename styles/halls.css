@@ -21,7 +21,6 @@
 .halls__item {
   width: 49%;
   float: left;
-  /* white-space: nowrap; */
   font-size: 70px; 
   font-weight: 700;
   line-height: 80px; 
@@ -30,7 +29,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* padding: 135px 65px; */
   padding-top: 135px;
   padding-bottom: 135px;
   margin: 0 0 20px;
