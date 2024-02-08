@@ -8,17 +8,19 @@
   font-weight: 700;
   line-height: 50px; 
   text-transform: uppercase;
-  margin: 0 0 60px;
+  margin: 0 0 40px;
 }
 
 .halls__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flow-root;
 }
 
 .halls__item {
-  white-space: pre-line;
+  width: 580px;
+  float: left;
   font-size: 70px; 
   font-weight: 700;
   line-height: 80px; 
@@ -27,13 +29,20 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 275px;
-  padding-bottom: 275px;
+  padding-top: 135px;
+  padding-bottom: 135px;
+  margin: 0 0 20px;
 }
 
-.halls__item:not(:last-child) {
-  margin-bottom: 60px;
+.halls__item:nth-child(even) {
+  float: right;
 }
+
+.halls__item:nth-last-child(-n+2) {
+  margin: 0;
+}
+
+
 
 .halls__item_theme_80-vibes {
   background-image: url("../images/main/vibes.jpg");
