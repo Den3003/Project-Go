@@ -15,15 +15,17 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flow-root;
+  margin: -10px;
+  font-size: 0;
 }
 
 .halls__item {
-  width: 49%;
-  float: left;
+  display: inline-block;
+  width: 100%;
+  max-width: calc(50% - 20px);
   font-size: 70px; 
   font-weight: 700;
-  line-height: 80px; 
+  line-height: calc(80 / 70); 
   text-transform: uppercase;
   text-align: center;
   background-size: cover;
@@ -31,17 +33,8 @@
   background-repeat: no-repeat;
   padding-top: 135px;
   padding-bottom: 135px;
-  margin: 0 0 20px;
+  margin: 10px;
 }
-
-.halls__item:nth-child(even) {
-  float: right;
-}
-
-.halls__item:nth-last-child(-n+2) {
-  margin: 0;
-}
-
 
 
 .halls__item_theme_80-vibes {
