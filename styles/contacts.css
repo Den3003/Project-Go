@@ -1,5 +1,5 @@
 .contacts {
-  padding: 50px 0 100px;
+  padding: 50px 0 10px;
 }
 
 .contacts__title {
@@ -9,6 +9,12 @@
   line-height: 50px; 
   text-transform: uppercase;
   margin: 0 0 54px;
+}
+
+.contacts__flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 155px;
 }
 
 .address {
@@ -66,3 +72,30 @@
   display: block;
   color: #fff;
 }
+
+.contacts__map {
+  /* width: calc(100% - 500px); */
+  max-width: 100%;
+  /* object-fit: contain; */
+}
+
+.contacts-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-bottom__text {
+  font-size: 14px;
+  line-height: 1.14;
+  margin: 0;
+}
+
+.contacts-designer {
+  text-align: right;
+}
+
+.contacts-bottom__link {
+  text-decoration: none;
+  color: inherit;
+}
+
