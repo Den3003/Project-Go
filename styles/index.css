@@ -1,5 +1,7 @@
 @import "style.css";
+@import "header.css";
 @import "hero.css";
+@import "relaxation.css";
 @import "halls.css";
 @import "reservation.css";
 @import "about.css";

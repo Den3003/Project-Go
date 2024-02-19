@@ -1,5 +1,5 @@
 .hero {
-  padding: 146px 0 50px;
+  padding: 50px 0 50px;
 }
 
 .hero__container {
@@ -20,7 +20,7 @@
   font-size: 28px;
   font-weight: 400;
   line-height: 50px;
-  margin: 0;
+  margin: 0 0 30px;
   padding-left: 100px;
 }
 
@@ -34,4 +34,63 @@
   bottom: 0;
   width: 675px;
   height: 762px;
+}
+
+.hero__description {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 150px;
+}
+
+.hero-description-text {
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0;
+  text-align: center;
+}
+
+.hero__description-left {
+  max-width: 193px;
+}
+
+.hero__description-right {
+  max-width: 166px;
+}
+
+.hero__description-halls {
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 1.4;
+  color: #cd06ff;
+}
+
+.hero__description-equipment {
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 1.5;
+  font-variant: small-caps;
+  color: #cd06ff;
+}
+
+.hero__button {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.15385;
+  padding: 25px 69px;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  background-color: #6c0287;
+  box-shadow: 2px 2px 20px #6c0287;
+  cursor: pointer;
+}
+
+.hero__arrow-down {
+  position: absolute;
+  left: 50%;
+  bottom: 90px;
+  transform: translateX(-50%);
+  z-index: 5;
 }
