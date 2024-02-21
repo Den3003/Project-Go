@@ -35,34 +35,28 @@
 }
 
 .reservation-halls__flex {
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .reservation-halls__name {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 30px;
   font-weight: 700;
   line-height: 1.33;
+  text-align: center;
   flex-basis: 250px;
-  min-height: 55px;
+  padding: 8px 0;
   text-transform: uppercase;
   border-radius: 8px;
   background-color: #fff;
   color: #000;
 }
 
-.reservation-halls__control {
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+.reservation-halls__control:checked+.reservation-halls__name {
+  background-color: #6c0287;
+  color: #fff;
 }
 
 .reservation-kit__flex {
@@ -73,6 +67,7 @@
 .reservation-kit__fieldset {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   margin: 0;
 }
 
@@ -110,7 +105,9 @@
 
 .reservation-choose__date {
   width: 134px;
-  height: 52px;
+  font-size: 18px;
+  line-height: 1.55;
+  padding: 9px 6px;
 }
 
 .choose-date {
@@ -157,4 +154,27 @@
   padding: 16px 50px;
   float: right;
   cursor: pointer;
+}
+
+.reservation-choose__input::placeholder {
+  font-size: 18px;
+  color: #000;
+}
+
+
+.reservation-choose__date:before {
+  content: attr(data-placeholder);
+  padding-left: 20px;
+  width: 100%;
+}
+
+.reservation-choose__date:focus::before,
+.reservation-choose__date:valid::before { display: none }
+
+.reservation-choose__date::-webkit-calendar-picker-indicator {
+  background-image: url("../images/main/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: 21px 15px;
+  padding-right: 27px;
+  margin: 0;
 }

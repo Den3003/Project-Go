@@ -44,18 +44,13 @@
 }
 
 .hero-description-text {
+  display: flex;
+  flex-direction: column;
+  max-width: min-content;
   font-weight: 400;
   font-size: 30px;
   margin: 0;
   text-align: center;
-}
-
-.hero__description-left {
-  max-width: 193px;
-}
-
-.hero__description-right {
-  max-width: 166px;
 }
 
 .hero__description-halls {
@@ -74,6 +69,7 @@
 }
 
 .hero__button {
+  text-decoration: none;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.15385;
@@ -93,4 +89,5 @@
   bottom: 90px;
   transform: translateX(-50%);
   z-index: 5;
+  font-size: 0;
 }

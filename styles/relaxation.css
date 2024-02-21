@@ -30,8 +30,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  padding-left: 40px;
-  padding-bottom: 34px;
+  padding: 34px 40px;
 }
 
 .relaxation__item_theme_vr {
@@ -61,6 +60,7 @@
 }
 
 .relaxation__item_padding-bottom_change {
+  padding-top: 6px;
   padding-bottom: 6px;
 }
 

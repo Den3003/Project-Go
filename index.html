@@ -44,26 +44,27 @@
           <p class="hero__subtitle">Новый формат игр и отдыха</p>
           
           <div class="hero__description">
-            <p class="hero-description-text hero__description-left">
+            <p class="hero-description-text">
               <span class="hero__description-halls">4</span> Тематических зала
             </p>
-            <p class="hero-description-text hero__description-right">
+            <p class="hero-description-text">
               <span class="hero__description-equipment">new</span> Новейшая аппаратура
             </p>
           </div>
 
-          <button class="hero__button">Забронировать</button>
-
-          <svg class="hero__arrow-down" width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a class="hero__button" href="#reservation">Забронировать</a>
+          <a class="hero__arrow-down" href="#relaxation">
+          <svg width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="48.5" cy="48.5" r="48" stroke="white" />
             <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="white" />
             <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="white" />
           </svg>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="relaxation">
+    <section id="relaxation" class="relaxation">
       <div class="container">
         <h2 class="relaxation__title">У нас есть всё для классного
           отдыха с друзьями!
@@ -130,25 +131,17 @@
           <fieldset class="form__fieldset reservation-halls">
             <legend class="form__title">Выбери зал</legend>
             <div class="reservation-halls__flex">
-              <label class="reservation-halls__name" lang="en">
-                <input class="reservation-halls__control" type="radio" name="halls" value="vibes">
-              80`s vibes
-              </label>
+              <input id="vibes" class="visually-hidden reservation-halls__control" type="radio" name="halls" value="vibes">
+              <label for="vibes" class="reservation-halls__name" lang="en">80`s vibes</label>
                 
-              <label class="reservation-halls__name" lang="en">
-                <input class="reservation-halls__control" type="radio" name="halls" value="starWars">
-              Star wars
-              </label>
+              <input id="star-wars" class="visually-hidden reservation-halls__control" type="radio" name="halls" value="starWars">
+              <label for="star-wars" class="reservation-halls__name" lang="en">Star wars</label>
               
-              <label class="reservation-halls__name" lang="en">
-                <input class="reservation-halls__control" type="radio" name="halls" value="wildWest">
-              Wild west
-              </label>
+              <input id="wild-west" class="visually-hidden reservation-halls__control" type="radio" name="halls" value="wildWest">
+              <label for="wild-west" class="reservation-halls__name" lang="en">Wild west</label>
                 
-              <label class="reservation-halls__name" lang="en">
-                <input class="reservation-halls__control" type="radio" name="halls" value="neon">
-              Neon style
-              </label>
+              <input id="neon" class="visually-hidden reservation-halls__control" type="radio" name="halls" value="neon">
+              <label for="neon" class="reservation-halls__name" lang="en">Neon style</label>
             </div>
           </fieldset>
 
@@ -225,8 +218,8 @@
             <div class="reservation-choose__flex">
               <div class="reservation-choose__column">
                 <div class="reservation-choose__flex choose-date">
-                  <input class="reservation-choose__date" type="date" name="date" required>
-                  <input class="reservation-choose__date" type="time" name="time" required>
+                  <input class="reservation-choose__date" type="date" name="date" data-placeholder="Дата" required>
+                  <input class="reservation-choose__date" type="time" name="time" data-placeholder="Время" required>
                 </div>
                 <input class="reservation-choose__input" type="number" name="numberOfPersons" placeholder="Сколько человек" required>
               </div>
