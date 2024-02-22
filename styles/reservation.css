@@ -52,6 +52,7 @@
   border-radius: 8px;
   background-color: #fff;
   color: #000;
+  cursor: pointer;
 }
 
 .reservation-halls__control:checked+.reservation-halls__name {
@@ -78,6 +79,7 @@
 .reservation-kit__name {
   font-size: 22px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .reservation-kit__name:last-child {
@@ -90,6 +92,7 @@
   margin-right: 8px;
   width: 27px;
   height: 27px;
+  cursor: pointer;
 }
 
 .reservation-kit__control_size_small {
@@ -104,6 +107,7 @@
 }
 
 .reservation-choose__date {
+  position: relative;
   width: 134px;
   font-size: 18px;
   line-height: 1.55;
@@ -172,9 +176,11 @@
 .reservation-choose__date:valid::before { display: none }
 
 .reservation-choose__date::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 13px;
+  right: 10px;
   background-image: url("../images/main/arrow-down.svg");
   background-repeat: no-repeat;
   background-size: 21px 15px;
-  padding-right: 27px;
   margin: 0;
 }

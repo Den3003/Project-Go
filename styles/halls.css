@@ -12,28 +12,35 @@
 }
 
 .halls__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
-  margin: -10px;
   font-size: 0;
 }
 
 .halls__item {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   width: 100%;
-  max-width: calc(50% - 20px);
-  font-size: 70px; 
-  font-weight: 700;
-  line-height: calc(80 / 70); 
-  text-transform: uppercase;
-  text-align: center;
+  max-width: calc(50% - 10px);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 135px;
   padding-bottom: 135px;
-  margin: 10px;
+}
+
+.halls__link {
+  font-size: 70px; 
+  font-weight: 700;
+  line-height: calc(80 / 70); 
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
 }
 
 

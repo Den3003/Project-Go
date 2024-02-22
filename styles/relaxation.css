@@ -30,7 +30,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  padding: 34px 40px;
+  padding: 6px 40px;
 }
 
 .relaxation__item_theme_vr {
@@ -59,13 +59,13 @@
 
 }
 
-.relaxation__item_padding-bottom_change {
-  padding-top: 6px;
-  padding-bottom: 6px;
-}
+/* .relaxation__item_padding-bottom_change { */
+  /* padding-top: 6px; */
+  /* padding-bottom: 6px; */
+/* } */
 
 .relaxation__text {
-  white-space: pre-line;
+  min-height: 56px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.4;
