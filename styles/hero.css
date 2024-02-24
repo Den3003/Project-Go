@@ -81,6 +81,15 @@
   background-color: #6c0287;
   box-shadow: 2px 2px 20px #6c0287;
   cursor: pointer;
+  outline: none;
+}
+
+.hero__button:hover, .hero__button:focus {
+  background-color: #840aa3;
+}
+
+.hero__button:active {
+  background-color: #640aa3;
 }
 
 .hero__arrow-down {
@@ -90,4 +99,30 @@
   transform: translateX(-50%);
   z-index: 5;
   font-size: 0;
+  outline: none;
+}
+
+.arrow-down {
+  color: white;
+}
+
+.arrow-down:hover {
+  fill: white;
+}
+
+.arrow-down:hover .arrow-down__check{
+  fill: #6c0287;
+}
+
+.hero__arrow-down:focus .arrow-down{
+  border: 1px solid #cd06ff;
+}
+
+.arrow-down:active {
+  color: #cd06ff;
+  fill: #cd06ff;
+}
+
+.arrow-down:active .arrow-down__check {
+  fill: white;
 }

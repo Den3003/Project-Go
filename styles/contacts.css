@@ -73,6 +73,20 @@
   color: #fff;
 }
 
+.social__link:hover {
+  color: #edeeed;
+}
+
+.social__link:focus {
+  outline: 1px solid #cd06ff;
+  color: #edeeed;
+}
+
+.social__link:active {
+  color: #cd06ff;
+  outline: none;
+}
+
 .contacts__map {
   /* width: calc(100% - 500px); */
   max-width: 100%;
@@ -97,5 +111,17 @@
 .contacts-bottom__link {
   text-decoration: none;
   color: inherit;
+}
+
+.contacts-bottom__link:hover {
+  color: #cd06ff;
+}
+
+.contacts-bottom__link:focus {
+  outline: 2px solid #cd06ff;
+}
+
+.contacts-bottom__link:active {
+  color: #640aa3;
 }
 

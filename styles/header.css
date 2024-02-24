@@ -24,6 +24,18 @@
   color: inherit;
 }
 
+.navigation__link:hover {
+  color: #640aa3;
+}
+
+.navigation__link:focus {
+  outline: 2px solid #640aa3;
+}
+
+.navigation__link:active {
+  color: #cd06ff;
+}
+
 .header__button {
   font-size: 22px;
   line-height: 1.36364;
@@ -36,4 +48,17 @@
   border: 3px solid #cd06ff;
   border-radius: 10px;
   cursor: pointer;
+  outline: none;
 }
+
+.header__button:hover, .header__button:focus {
+  background-color: #6c0287;
+  border-color: #6c0287;
+}
+
+.header__button:active {
+  border: 1px solid #000;
+  background-color: #640aa3;
+  padding: 11.5px 31.5px;
+}
+

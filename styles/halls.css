@@ -43,6 +43,20 @@
   color: inherit;
 }
 
+.halls__link:hover {
+  color: #af99b4;
+}
+
+.halls__link:focus {
+  color: #6d5d70;
+  outline: none;
+}
+
+.halls__link:active {
+  color: #563f5a;
+}
+
+
 
 .halls__item_theme_80-vibes {
   background-image: url("../images/main/vibes.jpg");

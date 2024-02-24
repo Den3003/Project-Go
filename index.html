@@ -23,11 +23,11 @@
 
       <nav class="navigation">
         <ul class="navigation__list">
-          <li class="navigation__item"><a class="navigation__link" href="#halls">Залы</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#about">О нас</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#reservation">Бронь</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#reviews">Отзывы</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#contacts">Контакты</a></li>
+          <li><a class="navigation__link" href="#halls">Залы</a></li>
+          <li><a class="navigation__link" href="#about">О нас</a></li>
+          <li><a class="navigation__link" href="#reservation">Бронь</a></li>
+          <li><a class="navigation__link" href="#reviews">Отзывы</a></li>
+          <li><a class="navigation__link" href="#contacts">Контакты</a></li>
         </ul>
       </nav>
 
@@ -54,10 +54,10 @@
 
           <a class="hero__button" href="#reservation">Забронировать</a>
           <a class="hero__arrow-down" href="#relaxation">
-          <svg width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="48.5" cy="48.5" r="48" stroke="white" />
-            <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="white" />
-            <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="white" />
+          <svg class="arrow-down" width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="arrow-down__cicrcle" cx="48.5" cy="48.5" r="48" stroke="currentColor" />
+            <rect class="arrow-down__check" x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="white" />
+            <rect class="arrow-down__check" x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="white" />
           </svg>
           </a>
         </div>
@@ -316,11 +316,56 @@
         <h2 class="faq__title">Частые вопросы</h2>
 
         <ul class="faq__list">
-          <li class="faq__item">Можно ли забронировать комнату онлайн?</li>
-          <li class="faq__item">Могут ли мне вернуть деньги за бронь?</li>
-          <li class="faq__item">Какая комната самая популярная?</li>
-          <li class="faq__item">Как получить VIP карту?</li>
-          <li class="faq__item">Какая комната самая популярная?</li>
+          <li class="faq__item">
+            Можно ли забронировать комнату онлайн?
+            <button class="faq__button" type="button">
+              <svg class="faq__icon faq__icon-purple" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="faq__active" d="M22.8306 14H23.5086V34H22.8306V14Z" fill="currentColor"/>
+                <path d="M13.0001 24.1695V23.4915H33.0001V24.1695H13.0001Z" fill="currentColor"/>
+                <circle cx="23.0001" cy="23" r="22" stroke="#440F51" stroke-width="2"/>
+              </svg>
+            </button>
+          </li>
+          <li class="faq__item">
+            Могут ли мне вернуть деньги за бронь?
+            <button class="faq__button" type="button">
+              <svg class="faq__icon faq__icon-white" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="faq__active" d="M22.8305 14H23.5085V34H22.8305V14Z" fill="currentColor" />
+                <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor" />
+                <circle cx="23" cy="23" r="22" stroke="white" stroke-width="2" />
+              </svg>
+            </button>
+          </li>
+          <li class="faq__item">
+            Какая комната самая популярная?
+            <button class="faq__button" type="button">
+              <svg class="faq__icon faq__icon-purple" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="faq__active" d="M22.8306 14H23.5086V34H22.8306V14Z" fill="currentColor"/>
+                <path d="M13.0001 24.1695V23.4915H33.0001V24.1695H13.0001Z" fill="currentColor"/>
+                <circle cx="23.0001" cy="23" r="22" stroke="#440F51" stroke-width="2"/>
+              </svg>
+            </button>
+          </li>
+          <li class="faq__item">
+            Как получить VIP карту?
+            <button class="faq__button" type="button">
+              <svg class="faq__icon faq__icon-white" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="faq__active" d="M22.8305 14H23.5085V34H22.8305V14Z" fill="currentColor" />
+                <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor" />
+                <circle cx="23" cy="23" r="22" stroke="white" stroke-width="2" />
+              </svg>
+            </button>
+          </li>
+          <li class="faq__item">
+            Какая комната самая популярная?
+            <button class="faq__button" type="button">
+              <svg class="faq__icon faq__icon-purple" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="faq__active" d="M22.8306 14H23.5086V34H22.8306V14Z" fill="currentColor"/>
+                <path d="M13.0001 24.1695V23.4915H33.0001V24.1695H13.0001Z" fill="currentColor"/>
+                <circle cx="23.0001" cy="23" r="22" stroke="#440F51" stroke-width="2"/>
+              </svg>
+            </button>
+          </li>
         </ul>
       </div>
     </section>
