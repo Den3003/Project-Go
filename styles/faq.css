@@ -18,6 +18,7 @@
 }
 
 .faq__item {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,6 +37,18 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  outline: none;
+}
+
+.faq__button:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.faq__button:focus:before {
+  outline-offset: 3px;
+  outline: 2px solid #840aa3;
 }
 
 .faq__item:last-child {
@@ -60,17 +73,17 @@
   color: #440F51;
 }
 
-.faq__icon-purple:hover {
+.faq__button:hover .faq__icon-purple{
   color: #fff;
   background-color: #440F51;
 }
 
-.faq__icon:active .faq__active {
+.faq__button:active .faq__active {
   display: none;
   
 }
 
-.faq__icon-purple:active {
+.faq__button:active .faq__icon-purple{
   color: #440F51;
   background-color: transparent;
 }
@@ -79,12 +92,12 @@
   color: white;
 }
 
-.faq__icon-white:hover {
+.faq__button:hover .faq__icon-white{
   color: #440F51;
   background-color: white;
 }
 
-.faq__icon-white:active {
+.faq__button:active .faq__icon-white{
   color: white;
   background-color: transparent;
 }

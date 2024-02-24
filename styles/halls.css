@@ -22,6 +22,7 @@
 }
 
 .halls__item {
+  position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -41,22 +42,28 @@
   text-align: center;
   text-decoration: none;
   color: inherit;
+  outline: none;
+}
+
+.halls__link:before {
+  content: "";
+  position: absolute;
+  inset: 0;
 }
 
 .halls__link:hover {
   color: #af99b4;
 }
 
-.halls__link:focus {
+.halls__link:focus:before {
   color: #6d5d70;
-  outline: none;
+  outline-offset: 3px;
+  outline: 3px solid #840aa3;
 }
 
 .halls__link:active {
   color: #563f5a;
 }
-
-
 
 .halls__item_theme_80-vibes {
   background-image: url("../images/main/vibes.jpg");
