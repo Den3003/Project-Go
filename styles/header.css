@@ -22,6 +22,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
+  transition: color .3s ease-in;
 }
 
 .navigation__link:hover {
@@ -49,6 +50,7 @@
   border-radius: 10px;
   cursor: pointer;
   outline: none;
+  transition: background-color .3s ease-in, border-color .3s ease-in;
 }
 
 .header__button:hover, .header__button:focus {

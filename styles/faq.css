@@ -71,6 +71,7 @@
 
 .faq__icon-purple {
   color: #440F51;
+  transition: background-color .4s ease-in, color .4s ease-in;
 }
 
 .faq__button:hover .faq__icon-purple{
@@ -90,6 +91,7 @@
 
 .faq__icon-white {
   color: white;
+  transition: background-color .4s ease-in, color .4s ease-in;
 }
 
 .faq__button:hover .faq__icon-white{

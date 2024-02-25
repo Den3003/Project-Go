@@ -82,6 +82,7 @@
   box-shadow: 2px 2px 20px #6c0287;
   cursor: pointer;
   outline: none;
+  transition: background-color .3s ease-in;
 }
 
 .hero__button:hover, .hero__button:focus {
@@ -99,28 +100,31 @@
   transform: translateX(-50%);
   z-index: 5;
   font-size: 0;
-  outline: none;
 }
 
 .arrow-down {
   color: white;
+  border-radius: 50%;
+  outline: none;
+  transition: color .3s ease-in, background-color .5s ease-in;
 }
 
 .arrow-down:hover {
-  fill: white;
+  background-color: #fff;
 }
 
 .arrow-down:hover .arrow-down__check{
   fill: #6c0287;
 }
 
-.hero__arrow-down:focus .arrow-down{
-  border: 1px solid #cd06ff;
+.hero__arrow-down:focus {
+  outline-offset: 2px;
+  outline: 1px solid #cd06ff;
 }
 
 .arrow-down:active {
+  background-color: #cd06ff;
   color: #cd06ff;
-  fill: #cd06ff;
 }
 
 .arrow-down:active .arrow-down__check {

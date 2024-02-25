@@ -32,6 +32,7 @@
   padding-left: 65px;
   background-repeat: no-repeat;
   background-position: left;
+  transition: color .3s ease-in;
 }
 
 .address__link:hover {
@@ -83,6 +84,7 @@
 .social__link {
   display: block;
   color: #fff;
+  transition: color .3s ease-in;
 }
 
 .social__link:hover {
@@ -123,6 +125,7 @@
 .contacts-bottom__link {
   text-decoration: none;
   color: inherit;
+  transition: color .3s ease-in;
 }
 
 .contacts-bottom__link:hover {

@@ -43,6 +43,7 @@
   text-decoration: none;
   color: inherit;
   outline: none;
+  transition: color .3s ease-in;
 }
 
 .halls__link:before {

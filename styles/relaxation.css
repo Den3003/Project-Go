@@ -31,6 +31,7 @@
   background-size: contain;
   background-position: center;
   padding: 6px 40px;
+  transition: transform .4s ease-in, box-shadow .5s ease-in;
 }
 
 .relaxation__item_theme_vr {
@@ -59,10 +60,10 @@
 
 }
 
-/* .relaxation__item_padding-bottom_change { */
-  /* padding-top: 6px; */
-  /* padding-bottom: 6px; */
-/* } */
+.relaxation__item:hover {
+  transform: scale(1.1);
+  box-shadow:  0 0 3px #fff;
+}
 
 .relaxation__text {
   min-height: 56px;
