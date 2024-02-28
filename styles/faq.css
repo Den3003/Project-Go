@@ -48,7 +48,7 @@
 
 .faq__button:focus:before {
   outline-offset: 3px;
-  outline: 2px solid #840aa3;
+  outline: 2px solid var(--color-magenta-200);
 }
 
 .faq__item:last-child {
@@ -56,12 +56,12 @@
 }
 
 .faq__item:nth-child(even) {
-  color: #fff;
-  background-color: #440F51;
+  color: var(--main-color);
+  background-color: var(--color-magenta-400);
 }
 
 .faq__item:nth-child(odd) {
-  background-color: #fff;
+  background-color: var(--main-color);
   color: #1C1A1A;
 }
 
@@ -70,13 +70,13 @@
 }
 
 .faq__icon-purple {
-  color: #440F51;
+  color: var(--color-magenta-400);
   transition: background-color .4s ease-in, color .4s ease-in;
 }
 
 .faq__button:hover .faq__icon-purple{
-  color: #fff;
-  background-color: #440F51;
+  color: var(--main-color);
+  background-color: var(--color-magenta-400);
 }
 
 .faq__button:active .faq__active {
@@ -85,22 +85,22 @@
 }
 
 .faq__button:active .faq__icon-purple{
-  color: #440F51;
+  color: var(--color-magenta-400);
   background-color: transparent;
 }
 
 .faq__icon-white {
-  color: white;
+  color: var(--main-color);
   transition: background-color .4s ease-in, color .4s ease-in;
 }
 
 .faq__button:hover .faq__icon-white{
-  color: #440F51;
-  background-color: white;
+  color: var(--color-magenta-400);
+  background-color: var(--main-color);
 }
 
 .faq__button:active .faq__icon-white{
-  color: white;
+  color: var(--main-color);
   background-color: transparent;
 }
 

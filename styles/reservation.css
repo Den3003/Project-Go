@@ -4,7 +4,7 @@
 
 .reservation {
   padding: 80px 0;
-  background-color: #440f51;
+  background-color: var(--color-magenta-400);
 }
 
 .reservation__title {
@@ -50,7 +50,7 @@
   padding: 5px 0;
   text-transform: uppercase;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: var(--main-color);
   border: 3px solid transparent;
   color: #000;
   cursor: pointer;
@@ -58,25 +58,25 @@
 }
 
 .reservation-halls__name:hover {
-  background-color: #eadeed;
-  border-color: #640aa3;
+  background-color: var(--color-grey);
+  border-color: var(--color-purple);
 }
 
 .reservation-halls__control:focus+.reservation-halls__name {
-  background-color: #fff;
-  border-color: #640aa3;
+  background-color: var(--main-color);
+  border-color: var(--color-purple);
 }
 
 .reservation-halls__control:active+.reservation-halls__name {
-  background-color: #6c0287;
-  border-color: #fff;
-  color: #fff;
+  background-color: var(--color-magenta-300);
+  border-color: var(--main-color);
+  color: var(--main-color);
 }
 
 .reservation-halls__control:checked+.reservation-halls__name {
-  background-color: #6c0287;
-  border-color: #fff;
-  color: #fff;
+  background-color: var(--color-magenta-300);
+  border-color: var(--main-color);
+  color: var(--main-color);
 }
 
 
@@ -118,7 +118,7 @@
 
 .reservation-kit__control:focus {
   outline-offset: 3px;
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--color-magenta-100);
 }
 
 .reservation-kit__control_size_small {
@@ -138,12 +138,12 @@
   font-size: 18px;
   line-height: 1.55;
   padding: 9px 6px;
-  border: 2px solid #fff;
+  border: 2px solid var(--main-color);
   outline: none;
 }
 
 .reservation-choose__date:focus {
-  border-color: #cd06ff;
+  border-color: var(--color-magenta-100);
 }
 
 .choose-date {
@@ -170,13 +170,13 @@
   font-size: 18px;
   line-height: 1.55;
   width: 100%;
-  border: 2px solid #fff;
+  border: 2px solid var(--main-color);
   padding: 10px;
   outline: none;
 }
 
 .reservation-choose__input:focus {
-  border-color: #cd06ff;
+  border-color: var(--color-magenta-100);
 }
 
 .reservation-choose__input:not(:last-child) {
@@ -189,11 +189,11 @@
   line-height: 1.27;
   font-weight: 700;
   text-transform: uppercase;
-  color: #6c0287;
+  color: var(--color-magenta-300);
   border: none;
   border-radius: 10px;
-  background-color: #fff;
-  border: 3px solid #fff;
+  background-color: var(--main-color);
+  border: 3px solid var(--main-color);
   padding: 13px 47px;
   float: right;
   cursor: pointer;
@@ -202,18 +202,18 @@
 }
 
 .form__button:hover {
-  background-color: #eadeed;
-  border-color: #6c0287;
+  background-color: var(--color-grey);
+  border-color: var(--color-magenta-300);
 }
 
 .form__button:focus {
-  background-color: #fff;
-  border-color: #6c0287;
+  background-color: var(--main-color);
+  border-color: var(--color-magenta-300);
 }
 
 .form__button:active {
-  background-color: #eadeed;
-  border-color: #eadeed;
+  background-color: var(--color-grey);
+  border-color: var(--color-grey);
 }
 
 .reservation-choose__input::placeholder {

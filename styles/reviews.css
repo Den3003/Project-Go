@@ -40,7 +40,22 @@
   object-fit: cover;
   object-position: top;
   border-radius: 50%;
+  
+}
+
+.reviews__wrap-picture {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  font-size: 0;
   margin: 0 0 11px;
+}
+
+.reviews__wrap-picture:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(50% 50% at 50% 50%, rgb(196, 196, 196, .1) 0%, rgba(108, 2, 135, .5) 100%);
 }
 
 .reviews__name {

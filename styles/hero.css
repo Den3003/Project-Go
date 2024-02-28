@@ -57,7 +57,7 @@
   font-weight: 900;
   font-size: 100px;
   line-height: 1.4;
-  color: #cd06ff;
+  color: var(--color-magenta-100);
 }
 
 .hero__description-equipment {
@@ -65,7 +65,7 @@
   font-size: 75px;
   line-height: 1.5;
   font-variant: small-caps;
-  color: #cd06ff;
+  color: var(--color-magenta-100);
 }
 
 .hero__button {
@@ -75,22 +75,22 @@
   line-height: 1.15385;
   padding: 25px 69px;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--main-color);
   border: none;
   border-radius: 10px;
-  background-color: #6c0287;
-  box-shadow: 2px 2px 20px #6c0287;
+  background-color: var(--color-magenta-300);
+  box-shadow: 2px 2px 20px var(--color-magenta-300);
   cursor: pointer;
   outline: none;
   transition: background-color .3s ease-in;
 }
 
 .hero__button:hover, .hero__button:focus {
-  background-color: #840aa3;
+  background-color: var(--color-magenta-200);
 }
 
 .hero__button:active {
-  background-color: #640aa3;
+  background-color: var(--color-purple);
 }
 
 .hero__arrow-down {
@@ -114,17 +114,17 @@
 }
 
 .arrow-down:hover .arrow-down__check{
-  fill: #6c0287;
+  fill: var(--color-magenta-300);
 }
 
 .hero__arrow-down:focus {
   outline-offset: 2px;
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--color-magenta-100);
 }
 
 .arrow-down:active {
-  background-color: #cd06ff;
-  color: #cd06ff;
+  background-color: var(--color-magenta-100);
+  color: var(--color-magenta-100);
 }
 
 .arrow-down:active .arrow-down__check {

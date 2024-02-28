@@ -1,0 +1,10 @@
+:root {
+  --main-color: #fff;
+  --main-bg-color: #1B1A1B;
+  --color-magenta-100: #cd06ff; /*light magenta 100*/
+  --color-magenta-300: #6c0287; /*dark magenta 300*/
+  --color-purple: #640aa3; /*dark purple*/
+  --color-magenta-200: #840aa3; /*dark magenta 200*/
+  --color-magenta-400: #440f51; /*dark magenta 400*/
+  --color-grey: #eadeed; /*grey*/
+}

@@ -18,7 +18,7 @@
   justify-content: center;
   gap: 40px 20px;
   list-style: none;
-  padding: 0;
+  padding: 0 0 70px;
   margin: 0;
 }
 
@@ -58,6 +58,10 @@
 .relaxation__item_theme_sony {
   background-image: url("../images/relaxation/sony.jpg");
 
+}
+
+.relaxation__item_transform_down {
+  transform: translateY(70px);
 }
 
 .relaxation__item:hover {

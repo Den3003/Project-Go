@@ -1,5 +1,6 @@
 .contacts {
   padding: 50px 0 10px;
+  background: linear-gradient(180deg, #1b1a1b 0%, #370a37 100%);
 }
 
 .contacts__title {
@@ -36,15 +37,15 @@
 }
 
 .address__link:hover {
-  color: #cd06ff;
+  color: var(--color-magenta-100);
 }
 
 .address__link:focus {
-  outline: 2px solid #cd06ff;
+  outline: 2px solid var(--color-magenta-100);
 }
 
 .address__link:active {
-  color: #640aa3;
+  color: var(--color-purple);
 }
 
 .address__link_type_location {
@@ -83,21 +84,21 @@
 
 .social__link {
   display: block;
-  color: #fff;
+  color: var(--main-color);
   transition: color .3s ease-in;
 }
 
 .social__link:hover {
-  color: #edeeed;
+  color: var(--color-grey);
 }
 
 .social__link:focus {
-  outline: 1px solid #cd06ff;
-  color: #edeeed;
+  outline: 1px solid var(--color-magenta-100);
+  color: var(--color-grey);
 }
 
 .social__link:active {
-  color: #cd06ff;
+  color: var(--color-magenta-100);
   outline: none;
 }
 
@@ -129,14 +130,14 @@
 }
 
 .contacts-bottom__link:hover {
-  color: #cd06ff;
+  color: var(--color-magenta-100);
 }
 
 .contacts-bottom__link:focus {
-  outline: 2px solid #cd06ff;
+  outline: 2px solid var(--color-magenta-100);
 }
 
 .contacts-bottom__link:active {
-  color: #640aa3;
+  color: var(--color-purple);
 }
 

@@ -59,7 +59,7 @@
 .halls__link:focus:before {
   color: #6d5d70;
   outline-offset: 3px;
-  outline: 3px solid #840aa3;
+  outline: 3px solid var(--color-magenta-200);
 }
 
 .halls__link:active {
