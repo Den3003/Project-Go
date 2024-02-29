@@ -55,7 +55,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(50% 50% at 50% 50%, rgb(196, 196, 196, .1) 0%, rgba(108, 2, 135, .5) 100%);
+  background: var(--img-radial-gradient);
 }
 
 .reviews__name {

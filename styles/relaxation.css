@@ -65,8 +65,12 @@
 }
 
 .relaxation__item:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
   box-shadow:  0 0 3px #fff;
+}
+
+.relaxation__item_transform_down:hover {
+  transform: translateY(70px) scale(1.08);
 }
 
 .relaxation__text {

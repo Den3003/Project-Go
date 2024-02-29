@@ -8,3 +8,11 @@
   --color-magenta-400: #440f51; /*dark magenta 400*/
   --color-grey: #eadeed; /*grey*/
 }
+
+.reviews {
+  --img-radial-gradient: radial-gradient(50% 50% at 50% 50%, rgb(196, 196, 196, .1) 0%, rgba(108, 2, 135, .5) 100%);
+}
+
+.contacts {
+  --bg-linear-gradient: linear-gradient(180deg, #1b1a1b 0%, #370a37 100%);
+}
