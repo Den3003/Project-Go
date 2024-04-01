@@ -277,8 +277,8 @@
   }
 
   .hero__container:after {
-    max-width: 290px;
-    max-height: 329px;
+    max-width: 300px;
+    max-height: 340px;
     right: 0px;
   }
 
@@ -328,7 +328,7 @@
 
 }
 
-@media (max-width: 470px) {
+@media (max-width: 480px) {
   .hero {
     padding: 20px 0;
   }
