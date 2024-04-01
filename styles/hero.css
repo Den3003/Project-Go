@@ -265,7 +265,7 @@
   }
 
   .hero__title {
-    font-size: 75px;
+    font-size: 78px;
     margin: 0 0 10px;
     letter-spacing: -8.6px;
   }
@@ -279,7 +279,6 @@
   .hero__container:after {
     max-width: 300px;
     max-height: 340px;
-    right: 0px;
   }
 
   .hero__description {
@@ -300,35 +299,103 @@
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 560px) {
   .hero__title {
-    font-size: 55px;
+    font-size: 65px;
     margin: 0 0 15px;
     letter-spacing: -2.6px;
   }
 
   .hero__container:after {
-    max-width: 260px;
-    max-height: 295px;
+    max-width: 268px;
+    max-height: 305px;
+    right: 0;
   }
 
   .hero__subtitle {
-    margin: 0 0 15px;
+    margin: 0 0 5px;
   }
-
-  .hero__description {
-    margin-bottom: 40px;
-    gap: 20px;
-  }
-
-  .hero__container {
-    padding-bottom: 33px;
-  }
-
 
 }
 
 @media (max-width: 480px) {
+  .hero__title {
+    font-size: 60px;
+    margin: 0 0 6px;
+  }
+
+  .hero__description {
+    margin-bottom: 35px;
+  }
+
+   .hero__container:after {
+    max-width: 244px;
+    max-height: 279px;
+  }
+
+}
+
+@media (max-width: 446px) {
+  .hero__title {
+    font-size: 52px;
+  }
+
+  .hero-description-text {
+    font-size: 13px;
+  }
+  
+  .hero__description-halls {
+    font-size: 30px;
+  }
+  
+  .hero__description-equipment {
+    font-size: 26px;
+  }
+
+  .hero__container:after {
+    max-width: 213px;
+    max-height: 241px;
+  }
+
+  .hero__arrow-down {
+    width: 43px;
+  }
+
+   .hero__button {
+    font-size: 12px;
+    line-height: 1.2;
+    width: 150px;
+    padding: 9.5px 0;
+  }
+
+}
+
+@media (max-width: 410px) {
+  .hero__container {
+    padding-bottom: 25px;
+  }
+
+  .hero__title {
+    font-size: 45px;
+  }
+
+  .hero__subtitle {
+    font-size: 13px;
+    padding-left: 30px;
+  }
+
+  .hero__description {
+    gap: 30;
+  }
+
+  .hero__container:after {
+    max-width: 178px;
+    max-height: 204px;
+  }
+}
+
+
+@media (max-width: 388px) {
   .hero {
     padding: 20px 0;
   }
