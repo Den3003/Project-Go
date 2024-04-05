@@ -1,5 +1,5 @@
 .contacts {
-  padding: 50px 0 10px;
+  padding: 50px 0 21px;
   background: var(--bg-linear-gradient);
 }
 
@@ -15,17 +15,18 @@
 .contacts__flex {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 155px;
+  margin-bottom: 145px;
 }
 
 .address {
-  padding: 0 0 40px;
+  margin-bottom: 40px;
 }
 
 .address__link {
   display: block;
   max-width: max-content;
   font-size: 24px;
+  line-height: 1.16;
   font-style: normal;
   font-weight: 700;
   text-decoration: none;
@@ -50,7 +51,6 @@
 
 .address__link_type_location {
   white-space: pre-line;
-  line-height: 28px;
   margin: 0 0 38px;
   background-image: url("../images/footer/location.svg");
 }
@@ -61,7 +61,6 @@
 }
 
 .address__link_type_email {
-  line-height: 28px; 
   margin: 0;
   background-image: url("../images/footer/mail.svg");
 }
@@ -71,15 +70,8 @@
   padding: 0;
   margin: 0;
   font-size: 0;
-}
-
-.social__item {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.social__item:not(:last-child) {
-  margin-right: 25px;
+  display: flex;
+  gap: 0 26px;
 }
 
 .social__link {
@@ -103,9 +95,7 @@
 }
 
 .contacts__map {
-  /* width: calc(100% - 500px); */
   max-width: 100%;
-  /* object-fit: contain; */
 }
 
 .contacts-bottom {
@@ -120,7 +110,10 @@
 }
 
 .contacts-designer {
-  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 6px 0;
+  align-items: flex-end;
 }
 
 .contacts-bottom__link {
@@ -139,5 +132,199 @@
 
 .contacts-bottom__link:active {
   color: var(--color-purple);
+}
+
+
+@media (max-width: 1110px) {
+  .contacts {
+    padding: 50px 0 19px;
+  }
+
+  .contacts__flex {
+    margin-bottom: 92px;
+  }
+
+  .contacts__title {
+    font-size: 30px;
+    line-height: 1.33; 
+    margin: 0 0 26px;
+  }
+
+  .address__link {
+    background-size: 26px 26px;
+    padding-left: 39px;
+  }
+
+  .social__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .address__link_type_location {
+    margin: 0 0 40px;
+  }
+
+  .address__link_type_phone {
+    margin: 0 0 7px;
+  }
+
+  .contacts__map {
+    width: 542px;
+  }
+}
+
+@media (max-width: 920px) {
+  .contacts__map {
+    width: 475px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+}
+
+@media (max-width: 850px) {
+  .contacts {
+    padding: 60px 0 18px;
+  }
+
+  .contacts__flex {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 75px;
+  }
+
+  .contacts__title {
+    font-size: 24px;
+    line-height: 1.5; 
+    margin: 0 0 30px;
+  }
+
+  .contacts__map {
+    width: 688px;
+    height: 337px;
+  }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .address__link_type_location {
+    background-image: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.5;
+    margin: 0 0 35px;
+  }
+
+  .link-location__span:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../images/footer/location.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 26px 26px;
+    width: 26px;
+    height: 26px;
+    margin-right: 4px;
+  }
+
+  .address__link_type_phone {
+    margin: 0 0 27px;
+  }
+
+  .address {
+    margin-bottom: 27px;
+  }
+
+  .social {
+    margin-bottom: 30px;
+  }
+
+  .social__list {
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .contacts__map {
+    height: 395px;
+  }
+}
+
+@media (max-width: 475px) {
+  .contacts {
+    padding: 20px 0 24px;
+  }
+
+  .contacts__title {
+    font-size: 14px;
+    line-height: 1.28;
+    margin: 0 0 15px;
+  }
+
+  .address__link {
+    font-size: 14px;
+    line-height: 1.28;
+    background-size: 20px 20px;
+    padding-left: 27px;
+  }
+
+  .address__link_type_location {
+    line-height: 0.5;
+    padding: 0;
+    margin: 0 0 15px;
+  }
+
+  .address__link_type_phone {
+    margin: 0 0 10px;
+  }
+
+  .link-location__span:before {
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .address {
+    margin-bottom: 10px;
+  }
+
+  .social__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social__list {
+    gap: 0 20px;
+  }
+
+  .social {
+    margin-bottom: 35px;
+  }
+
+  .contacts__flex {
+    margin-bottom: 63px;
+  }
+
+  .contacts-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px 0;
+  }
+
+  .contacts-designer {
+    align-items: center;
+  }
+
+  .contacts-bottom__text {
+    font-size: 12px;
+    line-height: 1.33;
+  }
 }
 

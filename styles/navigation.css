@@ -11,6 +11,9 @@
   background-color: transparent;
   border: none;
   display: none;
+  width: 54px;
+  height: 54px;
+  cursor: pointer;
 }
 
 .navigation-menu__line {
@@ -18,17 +21,32 @@
   display: block;
   height: 5px;
   border-radius: 2px;
+  transform-origin: 35%;
+  transition: background-color .3s ease-in;
 }
 
-.navigation-menu__line:not(:last-child) {
-  margin-bottom: 7px;
+.navigation-menu:hover .navigation-menu__line {
+  background-color: var(--color-magenta-100);
 }
 
-.line__top, .line__middle {
+.navigation-menu:focus {
+  outline-offset: 5px;
+  outline: 1px solid var(--color-magenta-100);
+}
+
+.navigation-menu:focus .navigation-menu__line{
+  background-color: var(--color-magenta-200);
+}
+
+.navigation-menu:active .navigation-menu__line {
+  background-color: var(--color-magenta-200);
+}
+
+.navigation-menu__line_position_top, .navigation-menu__line_position_middle {
   width: 54px;
 }
 
-.line__bottom {
+.navigation-menu__line_position_bottom {
   width: 31px;
 }
 
@@ -66,7 +84,27 @@
 
 @media (max-width: 830px) {
   .navigation-menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px 0;
+  }
+
+  .navigation-menu:active .navigation-menu {
+    gap: 0;
+  }
+
+  .navigation-menu:active .navigation-menu__line_position_bottom {
+    width: 54px;
+    transform: rotate(-45deg);
+  }
+
+  .navigation-menu:active .navigation-menu__line_position_top {
+    transform: rotate(45deg);
+  }
+
+  .navigation-menu:active .navigation-menu__line_position_middle {
+    display: none;
   }
 
   .navigation {
@@ -79,19 +117,21 @@
 }
 
 @media (max-width: 430px) {
-  .navigation-menu__line {
-    height: 3.45px;
+  .navigation-menu {
+    width: 39px;
+    height: 39px;
+    gap: 4.83px 0;
   }
 
-  .navigation-menu__line:not(:last-child) {
-    margin-bottom: 4.83px;
-  }
-
-  .line__top, .line__middle {
+  .navigation-menu__line_position_top, .navigation-menu__line_position_middle {
     width: 39px;
   }
 
-  .line__bottom {
+  .navigation-menu__line_position_bottom {
     width: 22.39px;
+  }
+
+  .navigation-menu:active .navigation-menu__line_position_bottom {
+    width: 39px;
   }
 }

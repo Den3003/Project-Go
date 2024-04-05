@@ -163,7 +163,6 @@
   .hero__container:after {
     max-width: 453px;
     max-height: 520px;
-    right: 60px;
   }
 
   .hero__description {
@@ -182,6 +181,10 @@
     font-size: 60px;
     line-height: 1.4;
   }
+
+  .hero__button-box {
+    padding-left: 39px;
+  }
   
   .hero__button {
     font-size: 22px;
@@ -194,14 +197,14 @@
     width: 67px;
     bottom: 46px;
   }
-  
 }
 
-@media (max-width: 920px) {
-  .hero__container:after {
-    right: 0px;
+@media (max-width: 890px) {
+  .hero__button-box {
+    padding: 0;
   }
 }
+
 
 @media (max-width: 810px) {
   .hero {
@@ -228,7 +231,6 @@
   .hero__container:after {
     max-width: 409px;
     max-height: 479px;
-    right: 20px;
   }
 
   .hero__description {
@@ -309,7 +311,6 @@
   .hero__container:after {
     max-width: 268px;
     max-height: 305px;
-    right: 0;
   }
 
   .hero__subtitle {
@@ -361,7 +362,7 @@
     width: 43px;
   }
 
-   .hero__button {
+  .hero__button {
     font-size: 12px;
     line-height: 1.2;
     width: 150px;
@@ -450,7 +451,6 @@
   .hero__container:after {
     max-width: 161px;
     max-height: 179px;
-    right: 0px;
   }
 
 }

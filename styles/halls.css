@@ -1,5 +1,5 @@
 .halls {
-  padding: 50px 0 100px 0;
+  padding: 50px 0 100px;
 }
 
 .halls__title {
@@ -30,15 +30,15 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 135px;
-  padding-bottom: 135px;
+  padding: calc(175 / 1180 * 100% - 80px) 0;
 }
 
 .halls__link {
   font-size: 70px; 
   font-weight: 700;
-  line-height: calc(80 / 70); 
+  line-height: 1.14; 
   text-transform: uppercase;
+  max-width: 215px;
   text-align: center;
   text-decoration: none;
   color: inherit;
@@ -50,10 +50,15 @@
   content: "";
   position: absolute;
   inset: 0;
+  transition: box-shadow .3s ease-in;
 }
 
 .halls__link:hover {
   color: #af99b4;
+}
+
+.halls__link:hover:before{
+  box-shadow:  0 0 3px #fff;
 }
 
 .halls__link:focus:before {
@@ -80,4 +85,80 @@
 
 .halls__item_theme_neon-style {
   background-image: url("../images/halls/neon.jpg");
+}
+
+@media (max-width: 1125px) {
+  .halls {
+    padding: 20px 0 70px;
+  }
+
+  .halls__title {
+    font-size: 30px;
+    line-height: 1.33;
+    margin: 0 0 37px;
+  }
+
+  .halls__link {
+    font-size: 50px;
+    line-height: 1.2;
+    max-width: 165px;
+  }
+
+  .halls__item {
+    padding: calc(133 / 904 * 100% - 60px) 0;
+  }
+}
+
+@media (max-width: 770px) {
+  .halls {
+    padding: 10px 0 62px;
+  }
+
+  .halls__title {
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 0 0 35px;
+  }
+
+  .halls__link {
+    font-size: 40px;
+    line-height: 1.25;
+  }
+
+  .halls__item {
+    padding: calc(100 / 688 * 100% - 50px) 0;
+  }
+}
+
+@media (max-width: 635px) {
+  .halls__list {
+    flex-direction: column;
+  }
+
+  .halls__item {
+    max-width: none;
+    padding: calc(150 / 575 * 100% - 50px) 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .halls {
+    padding: 10px 0 30px;
+  }
+
+  .halls__title {
+    font-size: 14px;
+    line-height: 1.28;
+    margin: 0 0 15px;
+  }
+
+  .halls__link {
+    font-size: 26px;
+    line-height: 1.3;
+    max-width: 85px;
+  }
+
+  .halls__item {
+    padding: calc(84 / 280 * 100% - 34px) 0;
+  }
 }

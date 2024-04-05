@@ -13,30 +13,23 @@
 }
 
 .relaxation__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px 20px;
   list-style: none;
-  padding: 0 0 70px;
+  padding: 0;
   margin: 0;
 }
 
 .relaxation__item {
   display: flex;
   align-items: flex-end;
-  flex-basis: 380px;
-  min-height: 228px;
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;
+  background-size: cover;
   padding: 6px 40px;
   transition: transform .4s ease-in, box-shadow .5s ease-in;
 }
 
 .relaxation__item_theme_vr {
   background-image: url("../images/relaxation/vr.jpg");
-  
 }
 
 .relaxation__item_theme_audio {
@@ -57,20 +50,11 @@
 
 .relaxation__item_theme_sony {
   background-image: url("../images/relaxation/sony.jpg");
-
-}
-
-.relaxation__item_transform_down {
-  transform: translateY(70px);
 }
 
 .relaxation__item:hover {
   transform: scale(1.08);
   box-shadow:  0 0 3px #fff;
-}
-
-.relaxation__item_transform_down:hover {
-  transform: translateY(70px) scale(1.08);
 }
 
 .relaxation__text {
@@ -79,4 +63,94 @@
   font-size: 20px;
   line-height: 1.4;
   margin: 0;
+}
+
+@media (max-width: 1125px) {
+  .relaxation__title {
+    font-size: 30px;
+    line-height: 1.33;
+    margin: 0 0 36px;
+  }
+
+  .relaxation__item {
+    padding: 2px 20px;
+  }
+}
+
+@media (max-width: 947px) {
+  .relaxation__item {
+    padding: 12px 30px;
+  }
+}
+
+@media (max-width: 780px) {
+  .relaxation__title {
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 0 0 30px;
+  }
+}
+
+@media (max-width: 723px) {
+  .relaxation__item {
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 682px) {
+  .relaxation__text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 629px) {
+  .relaxation__text {
+    font-size: 15px;
+    min-height: 28px;
+  }
+
+  .relaxation__item {
+    padding: 12px 10px;
+  }
+}
+
+@media (max-width: 491px) {
+  .relaxation__title {
+    font-size: 14px;
+    line-height: 1.28;
+    margin: 0 0 15px;
+  }
+
+  .relaxation__text {
+    font-size: 13px;
+  }
+
+  .relaxation__item {
+    padding: 3px 10px;
+  }
+}
+
+@media (max-width: 439px) {
+  .relaxation__text {
+    font-size: 10px;
+    min-height: auto;
+  }
+
+  .relaxation__item {
+    align-items: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .relaxation {
+    padding: 26px 0 20px;
+  }
+
+  .relaxation__text_size_small {
+    max-width: 110px;
+  }
+
+  .relaxation__text_position_end {
+    align-self: self-end;
+  }
 }

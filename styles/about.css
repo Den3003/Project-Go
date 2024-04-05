@@ -1,39 +1,41 @@
 .about {
-  padding: 50px 0;
+  padding: 100px 0 50px;
 }
 
 .about__title {
   font-size: 40px;
   font-weight: 700;
-  line-height: 50px; 
+  line-height: 1.25; 
   text-transform: uppercase;
   text-align: center;
   margin: 0 0 50px;
 }
 
-.about__left-side {
-  display: inline-block;
-  width: calc(100% - 560px);
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(300px, 600px) minmax(450px, 500px);
+  grid-template-areas: 
+  "image contents"
+  "image quote";
+  justify-content: space-between;
+  gap: 60px 20px;
+}
+
+
+.about__image {
+  grid-area: image;
   max-width: 100%;
-  vertical-align: top;
-  margin-right: 50px;
   object-fit: contain;
   object-position: top;
 }
 
-.about__right-side {
-  display: inline-block;
-  max-width: 500px;
-  vertical-align: top;
-}
-
 .about__contents {
-  margin-bottom: 59px;
+  grid-area: contents;
 }
 
 .about__text {
   font-size: 20px;
-  line-height: 28px;
+  line-height: 1.4;
   margin: 0 0 40px;
 }
 
@@ -41,19 +43,18 @@
   margin: 0;
 }
 
-
-
 .quote {
+  grid-area: quote;
   margin: 0;
 }
 
 .quote__text {
   position: relative;
   display: inline-block;
-  white-space: pre-line;
   font-family: inherit;
+  max-width: 415px;
   font-size: 44px;
-  line-height: 50px;
+  line-height: 1.13;
   text-transform: uppercase;
   margin: 0 0 40px;
   padding-left: 35px;
@@ -80,27 +81,186 @@
 }
 
 .quote__author {
-  display: inline-block;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 1.4;
   max-width: 270px;
   text-align: left;
   margin: 0;
-  vertical-align: bottom;
 }
 
 .quote__author-block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 30px;
   margin: 0;
-  text-align: right;
 }
 
 .quote__author-image {
   object-fit: cover;
   object-position: top;
   border-radius: 50%;
-  vertical-align: middle;
-  margin-right: 30px;
 }
+
+@media (max-width: 1045px) {
+  .about {
+    padding: 70px 0 20px;
+  }
+
+  .about-grid {
+    grid-template-columns: minmax(300px, 420px) minmax(400px, 444px);
+    gap: 26px 20px;
+  }
+
+  .about__image {
+    height: auto;
+  }
+
+  .about__title {
+    font-size: 30px;
+    line-height: 1.33;
+    margin: 0 0 26px;
+  }
+
+  .about__text {
+    font-size: 18px;
+    line-height: 1.33;
+    margin: 0 0 32px;
+  }
+
+  .quote__text {
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 0 0 13px;
+    padding-left: 25px;
+  }
+
+  .quote__text:before {
+    font-size: 30px;
+    line-height: 1.2;
+    top: -11px;
+  }
+
+  .quote__author-block {
+    column-gap: 35px;
+  }
+
+  .quote__author-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .quote__author {
+    font-size: 18px;
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 795px) {
+  .about {
+    padding: 60px 0 10px;
+  }
+
+  .about-grid {
+    grid-template-columns: minmax(300px, 382px) minmax(200px, 278px);
+    grid-template-areas: 
+    "image contents"
+    "quote quote";
+    gap: 30px 28px;
+  }
+
+  .about__title {
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 0 0 30px;
+  }
+
+  .about__text {
+    font-size: 16px;
+    line-height: 1.37;
+  }
+
+  .about__contents {
+    align-self: center;
+  }
+
+  .quote__text {
+    font-size: 32px;
+    line-height: 1.12;
+    max-width: 580px;
+    margin: 0 0 16px;
+    padding-left: 22px;
+  }
+
+  .quote__text:before {
+    font-size: 32px;
+    line-height: 1.12;
+  }
+
+  .quote__author-block {
+    column-gap: 25px;
+  }
+
+  .quote__author {
+    max-width: 232px;
+  }
+}
+
+@media (max-width: 610px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "contents"
+    "image"
+    "quote";
+    gap: 20px 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .about {
+    padding: 30px 0 10px;
+  }
+
+  .about__title {
+    font-size: 14px;
+    line-height: 1.28;
+    margin: 0 0 15px;
+  }
+
+  .about__text {
+    font-size: 12px;
+    line-height: 1.33;
+  }
+
+  .quote__text {
+    font-size: 18px;
+    line-height: 1.44;
+    padding-left: 13px;
+  }
+
+  .quote__text:before {
+    font-size: 18px;
+    top: -6px;
+  }
+
+  .quote__author-block {
+    justify-content: flex-start;
+    column-gap: 11px;
+  }
+
+  .quote__author-image {
+    width: 56px;
+    height: 56px;
+  }
+
+  .quote__author {
+    font-size: 12px;
+    line-height: 1.33;
+    max-width: 160px;
+  }
+}
+
 
 
 
