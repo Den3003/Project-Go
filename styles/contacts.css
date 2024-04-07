@@ -1,5 +1,5 @@
 .contacts {
-  padding: 50px 0 21px;
+  padding: 32px 0 21px;
   background: var(--bg-linear-gradient);
 }
 
@@ -137,7 +137,7 @@
 
 @media (max-width: 1110px) {
   .contacts {
-    padding: 50px 0 19px;
+    padding: 12px 0 19px;
   }
 
   .contacts__flex {
@@ -184,7 +184,7 @@
 
 @media (max-width: 850px) {
   .contacts {
-    padding: 60px 0 18px;
+    padding: 10px 0 18px;
   }
 
   .contacts__flex {
@@ -259,7 +259,7 @@
 
 @media (max-width: 475px) {
   .contacts {
-    padding: 20px 0 24px;
+    padding: 7px 0 24px;
   }
 
   .contacts__title {

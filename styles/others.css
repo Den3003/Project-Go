@@ -1,0 +1,147 @@
+.others {
+  padding: 50px 0 100px;
+}
+
+.others__title {
+  font-size: 40px;
+  line-height: 1.27;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 40px;
+}
+
+.others__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 0 20px;
+}
+
+.others__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-basis: 380px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: calc(115 / 1180 * 100% - 36px) 0;
+}
+
+.others__link {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  max-width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  transition: color .3s ease-in;
+}
+
+.others__link_width_zero {
+  display: flex;
+  align-items: center;
+  max-width: none;
+}
+
+.others__link:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transition: box-shadow .3s ease-in;
+}
+
+.others__link:hover:after {
+  box-shadow:  0 0 3px #fff;
+}
+
+.others__link:focus:after {
+  box-shadow:  0 0 3px #fff;
+}
+
+.others__link:active {
+  color: var(--color-magenta-100);
+}
+
+.others__item_theme_vibes {
+  background-image: url("../images/halls/vibes.jpg");
+}
+
+.others__item_theme_wild-west {
+  background-image: url("../images/halls/west.jpg");
+}
+
+.others__item_theme_star-wars {
+  background-image: url("../images/halls/star.jpg");
+}
+
+.others__item_theme_neon-style {
+  background-image: url("../images/halls/neon.jpg");
+}
+
+@media (max-width: 1110px) {
+  .others {
+    padding: 20px 0 70px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .others__title {
+    font-size: 30px;
+    line-height: 1.33;
+    margin: 0 0 36px;
+  }
+}
+
+@media (max-width: 850px) {
+  .others {
+    padding: 10px 0 60px;
+  }
+}
+
+@media (max-width: 830px) {
+  .others__title {
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 0 0 30px;
+  }
+
+  .others__link {
+    font-size: 20px;
+  }
+
+  .others__list {
+    gap: 0 8px;
+  }
+
+  .others__item {
+    padding: calc(67 / 688 * 100% - 24px) 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .others__list {
+    flex-direction: column;
+    gap: 5px 0;
+  }
+
+  .others__item {
+    flex-basis: 0;
+    padding: calc(70 / 280 * 100% - 24px) 0;
+  }
+
+  .others__link_width_zero {
+    min-height: 48px;
+  }
+}
+
+@media (max-width: 475px) {
+  .others {
+    padding: 10px 0 30px;
+  }
+}

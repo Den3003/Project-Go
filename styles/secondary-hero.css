@@ -1,0 +1,156 @@
+.secondary-hero {
+  padding: 60px 0 50px;
+}
+
+.secondary-hero__link {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 22px;
+  line-height: 1.27;
+  font-weight: 700;
+  outline: none;
+  margin-bottom: 20px;
+  width: max-content;
+  transition: color .3s ease-in;
+}
+
+.secondary-hero__link:hover {
+  color: var(--color-purple);
+}
+
+.secondary-hero__link:focus {
+  outline: 2px solid var(--color-purple);
+}
+
+.secondary-hero__link:active {
+  color: var(--color-magenta-100);
+}
+
+.secondary-hero__background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: calc(375 / 1180 * 100% - 80px) 0;
+  margin-bottom: 100px;
+}
+
+.secondary-hero__background_theme_vibes {
+  background-image: url("../images/secondary-hero/vibes.jpg");
+}
+
+.secondary-hero__background_theme_wild-west {
+  background-image: url("../images/secondary-hero/wild-west.jpg");
+}
+
+.secondary-hero__background_theme_star-wars {
+  background-image: url("../images/secondary-hero/star-wars.jpg");
+}
+
+.secondary-hero__background_theme_neon-style {
+  background-image: url("../images/secondary-hero/neon-style.jpg");
+}
+
+.secondary-hero__title {
+  font-size: 90px;
+  line-height: 0.88;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+
+}
+
+.secondary-hero__subtitle {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 700;
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .secondary-hero {
+    padding: 50px 0 20px;
+  }
+
+  .secondary-hero__background {
+    margin-bottom: 70px;
+    padding: calc(375 / 1200 * 100% - 80px) 0;
+  }
+
+  .secondary-hero__subtitle {
+    font-size: 20px;
+    max-width: 775px;
+  }
+}
+
+@media (max-width: 900px) {
+  .secondary-hero__link {
+    font-size: 20px;
+  }
+
+  .secondary-hero__title {
+    font-size: 75px;
+  }
+
+  .secondary-hero__subtitle {
+    font-size: 18px;
+    max-width: 775px;
+  }
+}
+
+@media (max-width: 830px) {
+  .secondary-hero {
+    padding: 40px 0 10px;
+  }
+
+  .secondary-hero__link {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  .secondary-hero__title {
+    font-size: 60px;
+    line-height: 1.2;
+  }
+
+  .secondary-hero__background {
+    margin-bottom: 60px;
+  }
+
+  .secondary-hero__subtitle {
+    font-size: 16px;
+    max-width: 655px;
+  }
+}
+
+@media (max-width: 520px) {
+  .secondary-hero {
+    padding: 20px 0 10px;
+  }
+
+  .secondary-hero__link {
+    font-size: 12px;
+    line-height: 1.33;
+    gap: 0 6px;
+    margin-bottom: 15px;
+  }
+
+  .secondary-hero__arrow {
+    width: 16px;
+    height: 13px;
+  }
+
+  .secondary-hero__title {
+    font-size: 30px;
+  }
+
+  .secondary-hero__background {
+    margin-bottom: 30px;
+    padding: calc(84 / 280 * 100% - 36px) 0;
+  }
+
+}

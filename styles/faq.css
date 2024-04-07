@@ -1,5 +1,5 @@
 .faq {
-  padding: 50px 0;
+  padding: 50px 0 68px;
 }
 
 .faq__title {
@@ -105,9 +105,15 @@
   display: none;
 }
 
+@media (max-width: 1110px) {
+  .faq {
+    padding: 20px 0 58px;
+  }
+}
+
 @media (max-width: 1040px) {
   .faq {
-    padding: 20px 0 ;
+    padding: 20px 0 58px;
   }
 
   .faq__title {
@@ -148,7 +154,7 @@
 
 @media (max-width: 780px) {
   .faq {
-    padding: 10px 0 ;
+    padding: 10px 0 60px;
   }
 
   .faq__title {
@@ -176,6 +182,10 @@
 }
 
 @media (max-width: 475px) {
+  .faq {
+    padding: 10px 0 23px;
+  }
+
   .faq__title {
     font-size: 14px;
     line-height: 1.28; 
