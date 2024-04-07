@@ -31,7 +31,7 @@
   font-weight: 700;
   line-height: 1.16;
   text-align: center;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
 }
 
 .reservation-halls__flex {
@@ -95,7 +95,8 @@
 
 .form__subtitle {
   text-align: left;
-  margin-bottom: 23px;
+  /* margin-bottom: 23px; */
+  margin: 0 0 23px;
 }
 
 .reservation-kit__name {
@@ -481,6 +482,7 @@ select {
   .form__title {
     font-size: 14px;
     line-height: 1.28;
+    margin-bottom: 15px;
   }
 
   .reservation-halls__name {
