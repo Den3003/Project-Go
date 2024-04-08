@@ -341,7 +341,7 @@ select {
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 900px) {
   .reservation {
     padding: 50px 0;
   }
@@ -436,7 +436,7 @@ select {
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 640px) {
   .reservation__title {
     font-size: 20px;
   }
