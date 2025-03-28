@@ -25,6 +25,10 @@
   transition: background-color .3s ease-in, border-color .3s ease-in;
 }
 
+.header__button-mobile {
+  display: none;
+}
+
 .header__button:hover, .header__button:focus {
   background-color: var(--color-magenta-300);
   border-color: var(--color-magenta-300);
@@ -54,11 +58,25 @@
   .header {
     padding: 32px 0 0 0;
   }
+
+  .header__logo {
+    position: relative;
+    z-index: 7;
+  }
+
+  .header__button {
+    position: relative;
+    z-index: 7;
+  }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 570px) {
   .header__button {
     display: none;
+  }
+
+  .header__button-mobile {
+    display: block;
   }
 }
 
@@ -70,6 +88,13 @@
   .header__logo {
     max-width: 66px;
     height: 42px;
+  }
+
+  .header__button-mobile {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 11px 0;
+    width: 184px;
   }
 }
 
