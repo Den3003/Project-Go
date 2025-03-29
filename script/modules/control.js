@@ -39,16 +39,20 @@ export const navigationControl = () => {
 
 export const modalControl = (closeNavList) => {
   const openModal = () => {
+    const scrollbarWidth = window.innerWidth - document
+        .documentElement.clientWidth;
     if (domElements.navigationButton.classList.contains('is-open')) {
       closeNavList();
     }
     domElements.modalOverlay.classList.add('is-visible');
     document.body.style.overflowY = 'hidden';
+    document.body.style.paddingRight = `${scrollbarWidth}px`;
   };
 
   const closeModal = () => {
     domElements.modalOverlay.classList.remove('is-visible');
     document.body.style.overflowY = 'unset';
+    document.body.style.paddingRight = '';
   };
 
   domElements.modalOpenButtons.forEach(btn => {
