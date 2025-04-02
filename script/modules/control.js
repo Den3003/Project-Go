@@ -16,7 +16,10 @@ export const navigationControl = () => {
   };
 
   domElements.navigationButton.addEventListener('click', e => {
-    if (e.target.classList.contains('is-open')) {
+    if (e.target.classList.contains('is-open') ||
+      (e.target.closest('.is-open') &&
+      e.target.classList.contains('navigation-menu__line'))) {
+      console.log('e.target: ', e.target);
       closeNavList();
     } else {
       openNavList();
