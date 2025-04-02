@@ -1,0 +1,136 @@
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  background-color: rgba(27, 26, 27, 0.7);
+  transition: opacity 0.2s ease-in-out;
+  z-index: 10;
+}
+
+.overlay.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  position: relative;
+  padding: 60px 160px 80px 160px;
+  background-color: var(--color-magenta-400);
+  cursor: default;
+}
+
+.modal__title {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+.modal__close {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__label {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0 0 6px;
+}
+
+.modal__input {
+  font-size: 18px;
+  line-height: 1.55;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  margin: 0 0 40px;
+}
+
+.modal__button {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: var(--color-magenta-300);
+  padding: 16px 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 1);
+  border: 3px solid var(--main-color);
+  cursor: pointer;
+}
+
+@media (max-width: 660px) {
+  .modal {
+    padding: 60px 100px 80px 100px;
+  }
+}
+
+@media (max-width: 540px) {
+  .modal {
+    padding: 60px 80px 80px 80px;
+  }
+}
+
+@media (max-width: 490px) {
+  .modal__close-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .modal {
+    padding: 60px 60px 80px 60px;
+  }
+
+  .modal__button {
+    font-size: 20px;
+    padding: 14px 45px;
+  }
+}
+
+.modal__input {
+  font-size: 16px;
+}
+
+@media (max-width: 420px) {
+  .modal__close-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .modal {
+    padding: 60px 20px 88px 20px;
+  }
+
+  .modal__button {
+    font-size: 18px;
+    padding: 12px 40px;
+  }
+
+  .modal__title {
+    font-size: 20px;
+  }
+
+  .modal__input {
+    margin: 0 0 50px;
+  }
+}
