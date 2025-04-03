@@ -2,8 +2,26 @@ import domElements from "./domElements.js";
 
 //  Navigation
 
+let startTime = NaN;
+const durationOpacity = 300;
+
+const controlOverlay = (timestamp) => {
+  startTime ||= timestamp;
+
+  const progress = (timestamp - startTime) / durationOpacity;
+
+  domElements.navigationList.style.opacity = progress;
+
+  if (progress < 1) {
+    requestAnimationFrame(controlOverlay);
+  } else {
+    startTime = NaN;
+  }
+};
+
 export const navigationControl = () => {
   const openNavList = () => {
+    requestAnimationFrame(controlOverlay);
     domElements.navigationList.classList.add('is-visible');
     domElements.navigationButton.classList.add('is-open');
     document.body.style.overflowY = 'hidden';
