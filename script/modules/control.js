@@ -1,21 +1,18 @@
 import domElements from "./domElements.js";
+import variables from "./variables.js";
 
 //  Navigation
 
-let startTime = NaN;
-const durationOpacity = 300;
-
 const controlOverlay = (timestamp) => {
-  startTime ||= timestamp;
-
-  const progress = (timestamp - startTime) / durationOpacity;
-
+  variables.startTime ||= timestamp;
+  const progress = (timestamp - variables.startTime) /
+    variables.durationOpacity;
   domElements.navigationList.style.opacity = progress;
 
   if (progress < 1) {
     requestAnimationFrame(controlOverlay);
   } else {
-    startTime = NaN;
+    variables.startTime = NaN;
   }
 };
 
@@ -25,12 +22,14 @@ export const navigationControl = () => {
     domElements.navigationList.classList.add('is-visible');
     domElements.navigationButton.classList.add('is-open');
     document.body.style.overflowY = 'hidden';
+    document.body.style.paddingRight = `${variables.scrollbarWidth}px`;
   };
 
   const closeNavList = () => {
     domElements.navigationList.classList.remove('is-visible');
     domElements.navigationButton.classList.remove('is-open');
     document.body.style.overflowY = 'unset';
+    document.body.style.paddingRight = '';
   };
 
   domElements.navigationButton.addEventListener('click', e => {
@@ -59,14 +58,12 @@ export const navigationControl = () => {
 
 export const modalControl = (closeNavList) => {
   const openModal = () => {
-    const scrollbarWidth = window.innerWidth - document
-        .documentElement.clientWidth;
     if (domElements.navigationButton.classList.contains('is-open')) {
       closeNavList();
     }
     domElements.modalOverlay.classList.add('is-visible');
     document.body.style.overflowY = 'hidden';
-    document.body.style.paddingRight = `${scrollbarWidth}px`;
+    document.body.style.paddingRight = `${variables.scrollbarWidth}px`;
   };
 
   const closeModal = () => {
