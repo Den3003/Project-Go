@@ -3,33 +3,46 @@ import variables from "./variables.js";
 
 //  Navigation
 
-const controlOverlay = (timestamp) => {
+const controlOverlay = (timestamp, hideNav) => {
   variables.startTime ||= timestamp;
   const progress = (timestamp - variables.startTime) /
     variables.durationOpacity;
-  domElements.navigationList.style.opacity = progress;
+  const opacity = variables
+      .toggleNavList ? progress : 1 - progress;
+  domElements.navigationList.style.opacity = opacity;
 
   if (progress < 1) {
-    requestAnimationFrame(controlOverlay);
+    requestAnimationFrame((newTimestamp) => {
+      controlOverlay(newTimestamp, hideNav);
+    });
   } else {
     variables.startTime = NaN;
+    hideNav();
   }
 };
 
 export const navigationControl = () => {
   const openNavList = () => {
-    requestAnimationFrame(controlOverlay);
     domElements.navigationList.classList.add('is-visible');
     domElements.navigationButton.classList.add('is-open');
     document.body.style.overflowY = 'hidden';
     document.body.style.paddingRight = `${variables.scrollbarWidth}px`;
+    variables.toggleNavList = true;
+    requestAnimationFrame((timestamp) => {
+      controlOverlay(timestamp, () => {});
+    });
   };
 
   const closeNavList = () => {
-    domElements.navigationList.classList.remove('is-visible');
-    domElements.navigationButton.classList.remove('is-open');
-    document.body.style.overflowY = 'unset';
-    document.body.style.paddingRight = '';
+    requestAnimationFrame((timestamp) => {
+      controlOverlay(timestamp, () => {
+        domElements.navigationList.classList.remove('is-visible');
+        domElements.navigationButton.classList.remove('is-open');
+        document.body.style.overflowY = 'unset';
+        document.body.style.paddingRight = '';
+      });
+    });
+    variables.toggleNavList = false;
   };
 
   domElements.navigationButton.addEventListener('click', e => {
