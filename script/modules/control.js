@@ -23,10 +23,12 @@ const controlOverlay = (timestamp, hideNav) => {
 
 export const navigationControl = () => {
   const openNavList = () => {
+    const scrollbarWidth = window.innerWidth - document
+        .documentElement.clientWidth;
     domElements.navigationList.classList.add('is-visible');
     domElements.navigationButton.classList.add('is-open');
     document.body.style.overflowY = 'hidden';
-    document.body.style.paddingRight = `${variables.scrollbarWidth}px`;
+    document.body.style.paddingRight = `${scrollbarWidth}px`;
     variables.toggleNavList = true;
     requestAnimationFrame((timestamp) => {
       controlOverlay(timestamp, () => {});
