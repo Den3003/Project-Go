@@ -54,6 +54,11 @@
 .modal__label {
   font-size: 14px;
   line-height: 16px;
+  margin: 0 0 40px;
+}
+
+.modal__name-span {
+  display: block;
   margin: 0 0 6px;
 }
 
@@ -63,7 +68,7 @@
   width: 100%;
   padding: 10px;
   outline: none;
-  margin: 0 0 40px;
+  
 }
 
 .modal__button {
@@ -130,7 +135,7 @@
     font-size: 20px;
   }
 
-  .modal__input {
+  .modal__label {
     margin: 0 0 50px;
   }
 }

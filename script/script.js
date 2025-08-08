@@ -12,3 +12,10 @@ const init = () => {
 
 init();
 
+new Swiper('.swiper', {
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-right',
+    prevEl: '.swiper-button-left',
+  },
+});

@@ -1,0 +1,102 @@
+.flatpickr-calendar {
+  border-radius: unset;
+  font-size: 16px;
+  /* font-weight: 500; */
+}
+
+.flatpickr-months {
+  align-items: center;
+  height: 50px;
+  padding: 0 33px;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.flatpickr-month {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flatpickr-current-month {
+  position: unset;
+  width: max-content;
+  height: max-content;
+  padding: 0;
+}
+
+.flatpickr-next-month,
+.flatpickr-prev-month {
+  position: static !important;
+  font-size: 0;
+  line-height: 0;
+  height: max-content !important;
+  padding: 0 !important;
+}
+
+.flatpickr-arrow-right,
+.flatpickr-arrow-left {
+  fill: black;
+  width: 35px !important;
+  height: 22px !important;
+}
+
+.flatpickr-prev-month.flatpickr-disabled {
+  display: block !important;
+}
+
+.flatpickr-prev-month.flatpickr-disabled:hover .flatpickr-arrow-left {
+  fill: black;
+}
+
+.flatpickr-disabled .flatpickr-arrow-left {
+  cursor: default;
+  opacity: .5;
+}
+
+.flatpickr-monthDropdown-months {
+  text-align: center;
+  padding: 0 !important;
+  appearance: none !important;
+  /* Убирает стрелку на большинстве браузеров */
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari и Chrome */
+}
+
+.numInputWrapper {
+  display: none !important;
+}
+
+.flatpickr-monthDropdown-months {
+  width: max-content !important;
+  font-size: 30px !important;
+  font-weight: 700 !important;
+}
+
+.flatpickr-weekdaycontainer {
+  height: 100%;
+}
+
+.flatpickr-weekday {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #e9e9e9;
+  text-transform: lowercase;
+}
+
+.flatpickr-day {
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+
+.flatpickr-day:hover,
+.flatpickr-day.selected,
+.flatpickr-day.selected:hover {
+  background: #6c0287;
+  color: #fff;
+  border-color: #6c0287;
+}
+
