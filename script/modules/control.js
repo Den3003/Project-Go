@@ -26,6 +26,8 @@ export const navigationControl = () => {
     const scrollbarWidth = window.innerWidth - document
         .documentElement.clientWidth;
     domElements.navigationList.classList.add('is-visible');
+    domElements.header.classList.add('header_active');
+    domElements.navigationList.style.visibility = 'visible';
     domElements.navigationButton.classList.add('is-open');
     document.body.style.overflowY = 'hidden';
     document.body.style.paddingRight = `${scrollbarWidth}px`;
@@ -39,6 +41,8 @@ export const navigationControl = () => {
     requestAnimationFrame((timestamp) => {
       controlOverlay(timestamp, () => {
         domElements.navigationList.classList.remove('is-visible');
+        domElements.header.classList.remove('header_active');
+        domElements.navigationList.style.visibility = 'hidden';
         domElements.navigationButton.classList.remove('is-open');
         document.body.style.overflowY = 'unset';
         document.body.style.paddingRight = '';

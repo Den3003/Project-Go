@@ -104,7 +104,7 @@
   left: 50%;
   bottom: 90px;
   transform: translateX(-50%);
-  z-index: 5;
+  z-index: 4;
   font-size: 0;
   line-height: 0;
 }
